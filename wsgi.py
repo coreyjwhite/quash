@@ -1,6 +1,6 @@
 """Web server entry point."""
 
-from api import create_app
+from quash import create_app
 
 app = create_app()
 

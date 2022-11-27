@@ -3,7 +3,7 @@
 import importlib.metadata
 import toml
 
-pyproject = toml.load("/home/corey/api/pyproject.toml")["tool"]["poetry"]
+pyproject = toml.load("/home/corey/quash/pyproject.toml")["tool"]["poetry"]
 
 
 class Config:

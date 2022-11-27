@@ -72,24 +72,24 @@ components:
     Inner:
       type: object
       properties:
-        python_version:
-          type: string
-          example: 3.8.10
         machine_name:
           type: string
           example: dev-machine
-        database:
+        python_version:
           type: string
-          example: my_db
-        api_version:
-          type: string
-          example: 0.3.0
-        platform:
-          type: string
-          example: Linux-4.4.0-19041-Microsoft-x86_64-with-glibc2.29
+          example: 3.8.10
         db_version:
           type: string
           example: 10.4.22-MariaDB-1:10.4.22+maria~focal-log
+        api_version:
+          type: string
+          example: 0.3.0
+        database:
+          type: string
+          example: my_db
+        platform:
+          type: string
+          example: Linux-4.4.0-19041-Microsoft-x86_64-with-glibc2.29
       required:
       - api_version
       - database
@@ -107,12 +107,12 @@ components:
       properties:
         paths:
           type: object
-        openapi:
-          type: string
-        components:
-          type: object
         info:
           type: object
+        components:
+          type: object
+        openapi:
+          type: string
       required:
       - components
       - info
@@ -121,36 +121,36 @@ components:
     Ping:
       type: object
       properties:
-        packet_transmit:
-          type: integer
-          example: 1
-        rtt_mdev:
-          type: number
-          example: 0.0
-        packet_receive:
-          type: integer
-          example: 1
         destination:
           type: string
           example: 192.168.1.77
         packet_loss_count:
           type: integer
           example: 0
+        packet_transmit:
+          type: integer
+          example: 1
+        rtt_mdev:
+          type: number
+          example: 0.0
+        rtt_avg:
+          type: number
+          example: 0.016
+        packet_receive:
+          type: integer
+          example: 1
+        packet_duplicate_rate:
+          type: number
+          example: 0.0
+        packet_loss_rate:
+          type: number
+          example: 0.0
         rtt_max:
+          type: number
+          example: 0.016
+        rtt_min:
           type: number
           example: 0.016
         packet_duplicate_count:
           type: integer
           example: 0
-        packet_duplicate_rate:
-          type: number
-          example: 0.0
-        rtt_min:
-          type: number
-          example: 0.016
-        rtt_avg:
-          type: number
-          example: 0.016
-        packet_loss_rate:
-          type: number
-          example: 0.0

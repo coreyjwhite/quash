@@ -3,7 +3,7 @@
 import sqlalchemy as sqla
 
 from ..models.base import BaseModel
-from ...config import Config
+from config import Config
 
 
 def create_table(table_names):

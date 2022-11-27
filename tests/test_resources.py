@@ -1,9 +1,9 @@
 """Response testing module for API resources."""
 # TODO conditional passing of parameters to test 400, 404, and 405 returns
 
-from ..api import db, scheduler
-from ..api.resources.base import BaseResource
-from ..api.utils import get_all_subclasses
+from ..quash import db, scheduler
+from ..quash.resources.base import BaseResource
+from ..quash.utils import get_all_subclasses
 
 
 def test_all_resources(client):

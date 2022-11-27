@@ -2,7 +2,7 @@
 
 import pytest
 
-from api import create_app
+from quash import create_app
 from ..config import TestConfig
 
 

@@ -6,7 +6,7 @@ from apispec import APISpec
 from apispec.ext.marshmallow import MarshmallowPlugin
 
 from ..resources import BaseResource
-from ...config import Config
+from config import Config
 
 # Load data from tool.poetry section of the pyproject.toml file
 pyproject = toml.load("pyproject.toml")["tool"]["poetry"]

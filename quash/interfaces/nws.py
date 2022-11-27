@@ -1,7 +1,7 @@
 from datetime import datetime
 import requests
 
-from ...config import Config
+from config import Config
 from .. import db, scheduler
 from ..models.weather import NwsObservation
 
